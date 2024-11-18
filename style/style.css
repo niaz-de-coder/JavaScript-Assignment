@@ -1,1 +1,79 @@
-
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar-nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.nav-link{
+    font-weight: bold;
+    transition: 0.3s all;
+}
+.nav-link:hover{
+    color: green !important;
+}
+/* Welcome Page */
+.welcome-page{
+    width: 100%;
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.wc-1{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wc-1 h3{
+    color: darkorange;
+}
+.wc-1 h1{
+    color: green;
+}
+.wc-2{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.wc-2 img{
+    width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.wc-3{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wc-3 button{
+    border: none;
+    width: 200px;
+    height: 30px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 25px ;
+    transition: 0.3s all;
+}
+.wc-3 button:hover{
+    background-color: darkorange;
+}
