@@ -77,3 +77,61 @@ body{
 .wc-3 button:hover{
     background-color: darkorange;
 }
+
+/* Form */
+.add-form{
+    width: 100%;
+    height: fit-content ;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 100px 100px;
+    justify-content: center;
+    gap: 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+.submit-btn{
+    width: 80%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.submit-btn button{
+    border: none;
+    width: 150px;
+    height: 30px;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s all;
+}
+.submit-btn button:hover{
+    background-color: green;
+}
+.form-sec{
+    display: flex;
+    flex-direction: column;
+}
+.af-label{
+    font-weight: bold;
+}
+.af-label span{
+    color: red;
+}
+.af-input-div{
+    display: flex;
+    flex-direction: row;
+}
+.afi-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+    width: 30px;
+    border: 1px solid black;
+}
+.afi-box{
+    width: 200px;
+    height: 30px;
+}
