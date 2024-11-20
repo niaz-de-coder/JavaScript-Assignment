@@ -32,7 +32,7 @@
       <!-- Form -->
        <main class="add-form">
         <section class="form-sec">
-          <label class="af-label" for="">Email<span>*</span></label>
+          <label id="email-label" class="af-label" for="">Email<span id="email-span">*</span></label>
         <div class="af-input-div">
           <div class="afi-icon"><i class="fa-solid fa-envelope"></i></div>
           <input placeholder="Enter your email e.g email@domain.com" id="email-input" class="afi-box" type="email">
@@ -40,7 +40,7 @@
         </section>
 
         <section class="form-sec">
-          <label class="af-label" for="">Applicant Full Name<span>*</span></label>
+          <label id="name-label" class="af-label" for="">Applicant Full Name<span id="name-span">*</span></label>
           <div class="af-input-div">
           <div class="afi-icon"><i class="fa-solid fa-user"></i></div>
           <input placeholder="e.g Md. Niaz Al Motin" id="name-input" class="afi-box" type="text">
@@ -48,7 +48,7 @@
         </section>
 
         <section class="form-sec">
-          <label class="af-label" for="">Mobile Number<span>*</span></label>
+          <label id="phn-no-label" class="af-label" for="">Mobile Number<span id="phn-no-span">*</span></label>
         <div class="af-input-div">
           <div class="afi-icon"><i class="fa-solid fa-phone"></i></div>
           <input placeholder="e.g 0171xxxxxxx" id="phn-no-input" class="afi-box" type="number">
@@ -56,14 +56,14 @@
         </section>
 
         <section class="form-sec">
-          <label class="af-label" for="">Date of Birth<span>*</span></label>
+          <label id="dob-label" class="af-label" for="">Date of Birth<span id="dob-span">*</span></label>
         <div class="af-input-div">
           <input id="dob-input" class="afi-box" type="date">
         </div>
         </section>
 
         <section class="form-sec">
-          <label class="af-label" for="">Gender<span>*</span></label>
+          <label id="gender-label" class="af-label" for="gender">Gender<span id="gender-span">*</span></label>
           <div class="af-input-div">
 
           </div>
@@ -76,15 +76,139 @@
         </section>
 
         <section>
-          <label class="af-label" for="img">Photo<span>*</span></label>
+          <label id="img-label" class="af-label" for="img">Photo<span id="img-span">*</span></label>
           <div class="af-input-div">
             <input type="file" id="img-input" name="img" accept="image/*">
           </div>
         </section>
       </main>
       <div class="submit-btn">
-        <button id="submit-btn">Next</button>
+        <button id="sub-btn">Next</button>
       </div>
+
+      <!-- input show -->
+       <section class="res-sec">
+        <div class="res-box">
+          <div class="res-img-div">
+            <img id="res-img" class="res-img" src="asset/image/bcc_logo.png" alt=""> 
+           </div>
+           <div class="res-info">
+             <h3 id="res-name" class="res-name">Applicant Name : <span class="res-span-name">vsvcgajc</span></h3>
+             <p id="res-email" class="res-email">Email : <span class="res-span-email">bjhsh@ncjns.com</span></p>
+             <p id="res-phn" class="res-phn">Mobile Number : <span class="res-span-phn">4242423424</span></p>
+             <p id="res-dob" class="res-dob">Date of Birth : <span class="res-span-number">12/12/32312</span></p>
+             <p id="res-gender" class="res-gender">Gender : <span class="res-span-gender">gcghc</span></p>
+           </div>
+        </div>
+        <div class="res-box">
+          <div class="res-img-div">
+            <img id="res-img" class="res-img" src="asset/image/bcc_logo.png" alt=""> 
+           </div>
+           <div class="res-info">
+             <h3 id="res-name" class="res-name">Applicant Name : <span class="res-span-name">vsvcgajc</span></h3>
+             <p id="res-email" class="res-email">Email : <span class="res-span-email">bjhsh@ncjns.com</span></p>
+             <p id="res-phn" class="res-phn">Mobile Number : <span class="res-span-phn">4242423424</span></p>
+             <p id="res-dob" class="res-dob">Date of Birth : <span class="res-span-number">12/12/32312</span></p>
+             <p id="res-gender" class="res-gender">Gender : <span class="res-span-gender">gcghc</span></p>
+           </div>
+        </div>
+        <div class="res-box">
+          <div class="res-img-div">
+            <img id="res-img" class="res-img" src="asset/image/bcc_logo.png" alt=""> 
+           </div>
+           <div class="res-info">
+             <h3 id="res-name" class="res-name">Applicant Name : <span class="res-span-name">vsvcgajc</span></h3>
+             <p id="res-email" class="res-email">Email : <span class="res-span-email">bjhsh@ncjns.com</span></p>
+             <p id="res-phn" class="res-phn">Mobile Number : <span class="res-span-phn">4242423424</span></p>
+             <p id="res-dob" class="res-dob">Date of Birth : <span class="res-span-number">12/12/32312</span></p>
+             <p id="res-gender" class="res-gender">Gender : <span class="res-span-gender">gcghc</span></p>
+           </div>
+        </div>
+        <div class="res-box">
+          <div class="res-img-div">
+            <img id="res-img" class="res-img" src="asset/image/bcc_logo.png" alt=""> 
+           </div>
+           <div class="res-info">
+             <h3 id="res-name" class="res-name">Applicant Name : <span class="res-span-name">vsvcgajc</span></h3>
+             <p id="res-email" class="res-email">Email : <span class="res-span-email">bjhsh@ncjns.com</span></p>
+             <p id="res-phn" class="res-phn">Mobile Number : <span class="res-span-phn">4242423424</span></p>
+             <p id="res-dob" class="res-dob">Date of Birth : <span class="res-span-number">12/12/32312</span></p>
+             <p id="res-gender" class="res-gender">Gender : <span class="res-span-gender">gcghc</span></p>
+           </div>
+        </div>
+        <div class="res-box">
+          <div class="res-img-div">
+            <img id="res-img" class="res-img" src="asset/image/bcc_logo.png" alt=""> 
+           </div>
+           <div class="res-info">
+             <h3 id="res-name" class="res-name">Applicant Name : <span class="res-span-name">vsvcgajc</span></h3>
+             <p id="res-email" class="res-email">Email : <span class="res-span-email">bjhsh@ncjns.com</span></p>
+             <p id="res-phn" class="res-phn">Mobile Number : <span class="res-span-phn">4242423424</span></p>
+             <p id="res-dob" class="res-dob">Date of Birth : <span class="res-span-number">12/12/32312</span></p>
+             <p id="res-gender" class="res-gender">Gender : <span class="res-span-gender">gcghc</span></p>
+           </div>
+        </div>
+        <div class="res-box">
+          <div class="res-img-div">
+            <img id="res-img" class="res-img" src="asset/image/bcc_logo.png" alt=""> 
+           </div>
+           <div class="res-info">
+             <h3 id="res-name" class="res-name">Applicant Name : <span class="res-span-name">vsvcgajc</span></h3>
+             <p id="res-email" class="res-email">Email : <span class="res-span-email">bjhsh@ncjns.com</span></p>
+             <p id="res-phn" class="res-phn">Mobile Number : <span class="res-span-phn">4242423424</span></p>
+             <p id="res-dob" class="res-dob">Date of Birth : <span class="res-span-number">12/12/32312</span></p>
+             <p id="res-gender" class="res-gender">Gender : <span class="res-span-gender">gcghc</span></p>
+           </div>
+        </div>
+        <div class="res-box">
+          <div class="res-img-div">
+            <img id="res-img" class="res-img" src="asset/image/bcc_logo.png" alt=""> 
+           </div>
+           <div class="res-info">
+             <h3 id="res-name" class="res-name">Applicant Name : <span class="res-span-name">vsvcgajc</span></h3>
+             <p id="res-email" class="res-email">Email : <span class="res-span-email">bjhsh@ncjns.com</span></p>
+             <p id="res-phn" class="res-phn">Mobile Number : <span class="res-span-phn">4242423424</span></p>
+             <p id="res-dob" class="res-dob">Date of Birth : <span class="res-span-number">12/12/32312</span></p>
+             <p id="res-gender" class="res-gender">Gender : <span class="res-span-gender">gcghc</span></p>
+           </div>
+        </div>
+        <div class="res-box">
+          <div class="res-img-div">
+            <img id="res-img" class="res-img" src="asset/image/bcc_logo.png" alt=""> 
+           </div>
+           <div class="res-info">
+             <h3 id="res-name" class="res-name">Applicant Name : <span class="res-span-name">vsvcgajc</span></h3>
+             <p id="res-email" class="res-email">Email : <span class="res-span-email">bjhsh@ncjns.com</span></p>
+             <p id="res-phn" class="res-phn">Mobile Number : <span class="res-span-phn">4242423424</span></p>
+             <p id="res-dob" class="res-dob">Date of Birth : <span class="res-span-number">12/12/32312</span></p>
+             <p id="res-gender" class="res-gender">Gender : <span class="res-span-gender">gcghc</span></p>
+           </div>
+        </div>
+        <div class="res-box">
+          <div class="res-img-div">
+            <img id="res-img" class="res-img" src="asset/image/bcc_logo.png" alt=""> 
+           </div>
+           <div class="res-info">
+             <h3 id="res-name" class="res-name">Applicant Name : <span class="res-span-name">vsvcgajc</span></h3>
+             <p id="res-email" class="res-email">Email : <span class="res-span-email">bjhsh@ncjns.com</span></p>
+             <p id="res-phn" class="res-phn">Mobile Number : <span class="res-span-phn">4242423424</span></p>
+             <p id="res-dob" class="res-dob">Date of Birth : <span class="res-span-number">12/12/32312</span></p>
+             <p id="res-gender" class="res-gender">Gender : <span class="res-span-gender">gcghc</span></p>
+           </div>
+        </div>
+        <div class="res-box">
+          <div class="res-img-div">
+            <img id="res-img" class="res-img" src="asset/image/bcc_logo.png" alt=""> 
+           </div>
+           <div class="res-info">
+             <h3 id="res-name" class="res-name">Applicant Name : <span class="res-span-name">vsvcgajc</span></h3>
+             <p id="res-email" class="res-email">Email : <span class="res-span-email">bjhsh@ncjns.com</span></p>
+             <p id="res-phn" class="res-phn">Mobile Number : <span class="res-span-phn">4242423424</span></p>
+             <p id="res-dob" class="res-dob">Date of Birth : <span class="res-span-number">12/12/32312</span></p>
+             <p id="res-gender" class="res-gender">Gender : <span class="res-span-gender">gcghc</span></p>
+           </div>
+        </div>
+          </section>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="json/json.js"></script>
