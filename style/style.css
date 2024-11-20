@@ -135,3 +135,57 @@ body{
     width: 200px;
     height: 30px;
 }
+
+
+/* input show section */
+.res-sec{
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    margin-top: 20px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.res-box{
+    width: 200px;
+    height: fit-content;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 50px 0px;
+    border-radius: 10px;
+}
+.res-img-div{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+.res-img{
+    width: 100px;
+}
+.res-name{
+    font-size: 15px;
+    font-weight: bold;
+}
+.res-email{
+    font-size: 12px;
+    font-weight: bold;
+}
+.res-phn{
+    font-size: 12px;
+    font-weight: bold;
+}
+.res-gender{
+    font-size: 12px;
+    font-weight: bold;
+}
+.res-dob{
+    font-size: 12px;
+    font-weight: bold;
+}
+.res-info{
+    margin-left: 2px;
+}
