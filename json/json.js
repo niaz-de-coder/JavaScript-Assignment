@@ -6,6 +6,7 @@ let numbers;
 let names;
 let dobs; 
 let imgs;
+let genders;
 
 function validE(e) {
     const patt = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -136,6 +137,7 @@ function validateGender(selectId) {
 next.addEventListener("click", function(){
 if (validateGender('gender-input')) {
     check = true;
+    document.getElementById("gender-input-1").value.toString() = genders;
     document.getElementById("gender-input").style.borderColor = "black";
     document.getElementById("gender-label").style.color = "black";
     document.getElementById("gender-span").style.color = "red";
@@ -165,6 +167,13 @@ next.addEventListener("click", function() {
         imgInput.style.borderColor = "black";
         imgLabel.style.color = "black";
         imgSpan.style.color = "red";
+        const file = imgInput.files[0];
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            imgs = e.target.result; // Set imgs to the base64 data URL
+            document.getElementById("res-img-1").src = imgs; // Update image source
+        };
+        reader.readAsDataURL(file);
 
         // Optional: Remove value reset, since this may conflict
         // imgInput.value = ""; // Remove this line unless you want to reset input
@@ -177,11 +186,23 @@ next.addEventListener("click", function() {
 });
 
 
-if(check == true){
-    let boxNum = 0;    
-    for(let i = 1; i<11; i++){
-        if(boxNum<i){
-            document.getElementById("")
-        }
-    }
-}
+
+    next.addEventListener("click", function() {
+        let count = 0;
+        if(check==true){
+            for (let i = 0; i<10; i++){
+                if(count==0){
+                    document.getElementById("res-name-1").innerText = names;
+                    document.getElementById("res-email-1").innerText = emails;
+                    document.getElementById("res-phn-1").innerText = numbers;
+                    document.getElementById("res-dob-1").innerText = dobs;
+                    document.getElementById("res-gender-1").innerText = genders; 
+                    document.getElementById("res-img-1").src = imgs;
+                    count = count+1;
+                    break;
+                }
+            }
+        }});
+    
+
+
