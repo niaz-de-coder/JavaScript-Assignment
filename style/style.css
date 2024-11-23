@@ -192,3 +192,16 @@ body{
 .res-info{
     margin-left: 2px;
 }
+
+
+
+@media (max-width : 950px) {
+    .add-form{
+        display: flex;
+        flex-direction: column;
+    }
+    .res-sec{
+        display: flex;
+        flex-direction: column;
+    }
+}
